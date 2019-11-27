@@ -1,0 +1,66 @@
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-family: $base-font;
+  @include min-screen($m) {
+    font-size: $base-font-size;
+  }
+  font-size: $base-font-size-m;
+  color: $base-color;
+  background: $base-bg;
+  line-height: 1.5;
+}
+
+a {
+  transition: $transition;
+  text-decoration: none;
+  color: $accent-color;
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-justify {
+  text-align: justify;
+}
+
+strong,
+b,
+.bold {
+  font-family: $base-font;
+  font-weight: 900;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  font-family: $base-font;
+  a {
+    font-family: $base-font;
+    font-weight: 900;
+  }
+}
+
+.text-small {
+  font-size: 1.2rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
